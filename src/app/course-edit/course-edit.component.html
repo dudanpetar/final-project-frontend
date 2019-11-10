@@ -1,0 +1,33 @@
+<div class="component-wrapper">
+  <div class="left-side-bar col-xs-1">
+  <div class="col-xs-10">
+    <p>Edit the name: {{course.name}}</p>
+<input
+  [(ngModel)]="course.name"
+>
+    <p>Edit the description: {{course.description}}</p>
+
+    <input
+  [(ngModel)]="course.description"
+>
+    <p>Edit the price: {{course.price}}</p>
+
+    <input
+  [(ngModel)]="course.price"
+>
+
+    <div class="btnmargin">
+      <button class="btn-primary"
+              type="button"
+              (click)="saveCourse()"
+      >Save
+      </button>
+      <button class="btn-success"
+              type="button"
+    routerLink="/courses"> Back to Courses</button>
+
+
+</div>
+</div>
+</div>
+

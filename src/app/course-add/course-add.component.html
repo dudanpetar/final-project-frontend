@@ -1,0 +1,32 @@
+<div class="component-wrapper">
+  <div class="left-side-bar col-xs-1"></div>
+  <div class="col-xs-10">
+    <p>Enter the course name</p>
+
+<input
+  [(ngModel)]="name"
+>
+<p>Enter the course description</p>
+<input
+  [(ngModel)]="description"
+>
+<p>Enter the course`s picture url</p>
+<input
+  [(ngModel)]="imagePath"
+>
+<p>Enter the course price</p>
+<input
+  [(ngModel)]="price"
+>
+<div class="btnmargin">
+  <button class="btn-primary"
+          type="button"
+          (click)="saveCourse()"
+  >Create
+  </button>
+  <button class="btn-success"
+          type="button"
+          routerLink="/courses"> Back to Courses</button>
+</div>
+  </div>
+</div>
